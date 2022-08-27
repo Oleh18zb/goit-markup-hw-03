@@ -27,7 +27,24 @@ body {
 }
 
 /* header */
+.container {
+    display: flex;
+    width: 1200px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
 .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 /* logo */
@@ -38,6 +55,9 @@ body {
         color: var(--logo-color);
     text-decoration: none;
     font-family: raleway;
+    padding: 24px 0;
+    /* margin-left: 215px; */
+
 }
 
 .logo-span {
@@ -45,7 +65,12 @@ body {
     text-decoration: none;
 }
 /* nav */
+.container-nav {
+    padding-left: 93px;
+}
 .site-nav {
+    /* width: 281px;
+    height: 16px; */
     font-weight: 500;
         font-size: 14px;
         line-height: calc(16 / 14);
@@ -53,6 +78,12 @@ body {
         color: var(--primary-text-color);
         cursor: pointer;
         list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding-left: 0;
+        align-items: center;
+        margin: 0 0;
 }
 
 .site-nav:hover, .site-nav:focus, .site-nav:active {
@@ -60,6 +91,7 @@ body {
 }
 .nav-link {
     text-decoration: none;
+    padding: 32px 0;
 }
 
 /* contacts */
@@ -71,12 +103,21 @@ body {
         color: var(--accent-color);
         cursor: pointer;
         text-decoration: none;
+        margin-left: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 .contact-information:hover, .contact-information:focus {
     color: var(--logo-color);
 }
 .site-contact {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 344px;
+    margin: 0;
 }
 
 /* unique page content */
@@ -94,8 +135,16 @@ body {
         line-height: calc(60 / 44);
         text-align: center;
         letter-spacing: 0.06em;
+        margin: 0;
+        padding-top: 215px;
 }
 .hero-button {
+    border: 0;
+        padding: 10px 32px;
+        margin-top: 30px;
+        margin-bottom: 200px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
         font-size: 16px;
@@ -112,7 +161,8 @@ background-color: var(--button-hover-color);
 }
 
 /* section one */
-.section {}
+.section {
+}
 
 .visually-hidden {
         position: absolute;
@@ -129,6 +179,15 @@ background-color: var(--button-hover-color);
 
 .section-about {
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding-top: 107px;
+    gap: 30px;
+    height: 98px;
+    justify-content: center;
+}
+.container-section {
+    width: 270px;
 }
 
 .section-title {
@@ -137,15 +196,20 @@ background-color: var(--button-hover-color);
         line-height: calc(16 / 14);
         text-transform: uppercase;
         color: var(--primary-text-color);
+        margin: 0;
 }
 
 .section-text {
         font-size: 14px;
         line-height: calc(24 / 14);
         color: var(--accent-color);
+        padding-top: 10px;
+        margin: 0;
 }
 /* section two */
-.about {}
+.about {
+    padding-top: 94px;
+}
 
 .about-title {
         font-weight: 700;
@@ -153,14 +217,26 @@ background-color: var(--button-hover-color);
         line-height: calc(44 / 36);
         text-align: center;
         color: var(--primary-text-color);
+        margin: 0;
 }
 .about-list {
     list-style: none;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 94px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* section three */
 .company {
     background-color: var(--second-bg-color);
+    padding-bottom: 94px;
+    height: 684px;
+    padding-top: 94px;
 }
 
 .company-title {
@@ -169,12 +245,27 @@ background-color: var(--button-hover-color);
         line-height: calc(44 / 36);
         text-align: center;
         color: var(--primary-text-color);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        
+}
+.list-foto {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
 }
 .company-list {
     background-color: var(--bg-color);
     list-style: none;
+    padding-top: 0;
 }
-
+.img {
+    padding-top: 0;
+}
 
 .company-name {
     
@@ -195,6 +286,14 @@ background-color: var(--button-hover-color);
 /* footer */
 .footer {
     background-color: var(--footer-bg-color);
+    height: 252px;
+}
+.container-logo {
+    padding-top: 60px;
+}
+.logo-footer {
+    padding: 0;
+    padding-left: 215px;
 }
 .footer-span {
     color: var(--bg-color);
@@ -205,11 +304,20 @@ background-color: var(--button-hover-color);
         line-height: calc(24 / 14);
         color: var(--bg-color);
         font-style: normal;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
 }
 .footer-list {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
-
+.container-footer {
+    padding-top: 0;
+    padding-left: 215px;
+    margin-bottom: 60px;
+}
 
 .footer-contacts {
         font-size: 14px;
@@ -217,6 +325,9 @@ background-color: var(--button-hover-color);
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
         font-style: normal;
+}
+:first-child {
+    padding-top: 9px;
 }
 .footer-contacts:hover, .footer-contacts:focus, .footer-contacts:active{
     color: var(--logo-color);
@@ -250,6 +361,8 @@ background-color: var(--button-hover-color);
 }
 
 .btn {
+    border: 0;
+    border-radius: 4px;
     font-family: inherit;
     background-color: var(--second-bg-color);
     color: var(--primary-text-color);
@@ -258,6 +371,35 @@ background-color: var(--button-hover-color);
         font-size: 16px;
         line-height: calc(26 / 16);
         text-align: center;
+}
+.one {
+    width: 73px;
+    min-height: 38px;
+    padding: 6px 25px;
+}
+
+.two {
+    width: 125px;
+    min-height: 38px;
+    padding: 6px 22px;
+}
+
+.three {
+    width: 112px;
+    min-height: 38px;
+    padding: 6px 22px;
+}
+
+.four {
+    width: 103px;
+    min-height: 38px;
+    padding: 6px 22px;
+}
+
+.five {
+    width: 130px;
+    min-height: 38px;
+    padding: 6px 22px;
 }
 .btn:hover, .btn:focus, .btn:active {
     background-color: var(--logo-color);
