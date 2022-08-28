@@ -50,9 +50,11 @@ body {
     margin-right: auto;
 }
 .page-header {
+    width: 1200px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #ECECEC;
+    padding-left: 215px;
 }
 .header-nav {
     display: flex;
@@ -67,7 +69,7 @@ body {
     text-decoration: none;
     font-family: raleway;
     padding: 24px 0;
-    margin-left: 215px;
+    /* margin-left: 215px; */
 
 }
 
@@ -103,6 +105,8 @@ body {
 }
 
 /* contacts */
+.contact-item {
+}
 .contact-information {
     font-weight: 500;
         font-size: 14px;
@@ -114,7 +118,7 @@ body {
         margin-left: auto;
         display: flex;
         align-items: flex-end;
-        padding: 32px;
+        padding: 32px 0;
 }
 .contact-information:hover, .contact-information:focus {
     color: var(--logo-color);
@@ -124,7 +128,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    /* gap: 50px; */
+    gap: 50px;
     padding-left: 344px;
     margin: 0;
 }
@@ -275,6 +279,9 @@ background-color: var(--button-hover-color);
     padding-top: 0;
 }
 .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     padding-top: 0;
 }
 
@@ -360,11 +367,13 @@ background-color: var(--button-hover-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     padding-top: 50px;
     padding-bottom: 94px;
 }
 .portfolio-item {
+    
 }
 .link-img {
     text-decoration: none;
@@ -392,6 +401,7 @@ background-color: var(--button-hover-color);
 }
 
 .section-btn {
+    width: 1200px;
     margin-left: 215px;
 }
 
