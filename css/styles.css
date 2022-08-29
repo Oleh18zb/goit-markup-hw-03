@@ -50,11 +50,9 @@ body {
     margin-right: auto;
 }
 .page-header {
-    width: 1200px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #ECECEC;
-    margin: 0 auto;
 }
 .header-nav {
     display: flex;
