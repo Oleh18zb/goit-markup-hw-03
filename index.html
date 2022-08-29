@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -27,14 +30,19 @@
                     <li><a class="nav-link site-nav" href="">Контакти</a></li>
                 </ul>
             </div>
-            
+        
         </nav>
         <ul class="site-contact">
-            <li class="contact-item"><a class="contact-information" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="contact-item"><a class="contact-information" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contact-item">
+                <a class="contact-information" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-item">
+                <a class="contact-information" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
         </ul>
-        </div>
     </header>
+    </div>
+        
     <!--unique page content-->
     <main>
         <!--hero-->
@@ -48,32 +56,26 @@
         <section class="section">
             <div class="container">
             <h2 class="visually-hidden" >Features</h2>
+            <div class="container-section">
             <ul class="section-about">
-                <div class="container-section">
-                    <li>
+                    <li class="list-container">
                         <h3 class="section-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="section-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                </div>
-                <div class="container-section">
-                    <li>
+                    <li class="list-container">
                         <h3 class="section-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="section-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                </div>
-                <div class="container-section">
-                    <li>
+                    <li class="list-container">
                         <h3 class="section-title">ПЛАНУВАННЯ</h3>
                         <p class="section-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                </div>
-                <div class="container-section">
-                    <li>
+                    <li class="list-container">
                         <h3 class="section-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="section-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
-                </div>
             </ul>
+                </div>
             </div>
         </section>
         <!--section-two-->
@@ -100,23 +102,31 @@
             <ul class="list-foto">
                 <li class="company-list">
                     <img class="img" src="./images/person-one.jpg" alt="розробник продукту" width="270" height="260">
-                    <h3 class="company-name">Ігор Дем'яненко</h3>
-                    <p class="company-text" lang="en">Product Designer</p>
+                    <div class="team-group">
+                        <h3 class="company-name">Ігор Дем'яненко</h3>
+                        <p class="company-text" lang="en">Product Designer</p>
+                    </div>  
                 </li>
                 <li class="company-list">
                     <img class="img" src="./images/person-two.jpg" alt="фронтенд розробник" width="270" height="260">
-                    <h3 class="company-name">Ольга Рєпіна</h3>
-                    <p class="company-text" lang="en">Frontend Developer</p>
+                    <div class="team-group">
+                        <h3 class="company-name">Ольга Рєпіна</h3>
+                        <p class="company-text" lang="en">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="company-list">
                     <img class="img" src="./images/person-three.jpg" alt="маркетинг" width="270" height="260">
-                    <h3 class="company-name">Микола Тарасов</h3>
-                    <p class="company-text" lang="en">Marketing</p>
+                    <div class="team-group">
+                        <h3 class="company-name">Микола Тарасов</h3>
+                        <p class="company-text" lang="en">Marketing</p>
+                    </div>
                 </li>
                 <li class="company-list">
                     <img class="img" src="./images/person-four.jpg" alt="иі дизайнер" width="270" height="260">
-                    <h3 class="company-name">Михайло Єрмаков</h3>
-                    <p class="company-text" lang="en">UI Designer</p>
+                    <div class="team-group">
+                        <h3 class="company-name">Михайло Єрмаков</h3>
+                        <p class="company-text" lang="en">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -125,10 +135,8 @@
     <!--footer-->
     <footer class="footer">
         <div class="container">
-        <div class="container-logo">
         <a class="logo logo-footer" lang="en" href="./index.html">Web<span class="footer-span">Studio</span></a>
-        </div>
-        <address>
+        <address class="footer-data">
             <div class="container-footer">
             <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-list">
