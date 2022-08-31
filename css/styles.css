@@ -54,8 +54,12 @@ body {
     justify-content: center;
     border-bottom: 1px solid #ECECEC;
 }
+.header-container {
+    display: flex;
+}
 .header-nav {
     display: flex;
+    margin-right: 344px;
 }
 
 /* logo */
@@ -68,8 +72,6 @@ body {
     font-family: raleway;
     padding: 24px 0;
     margin-right: 93px;
-    /* margin-left: 215px; */
-
 }
 
 .logo-span {
@@ -148,6 +150,8 @@ body {
         text-align: center;
         letter-spacing: 0.06em;
         margin: 0;
+        width: 696px;
+        margin: 0 auto;
 }
 .hero-button {
     border: 0;
@@ -192,10 +196,7 @@ background-color: var(--button-hover-color);
 .section-about {
     list-style: none;
     display: flex;
-    margin: 0;
-    /* padding-top: 107px; */
     gap: 30px;
-    height: 98px;
     justify-content: center;
 }
 .container-section {
@@ -268,10 +269,7 @@ background-color: var(--button-hover-color);
 .list-foto {
     display: flex;
     gap: 30px;
-    padding-left: 0;
-    justify-content: center;
-    margin: 0;
-    
+    justify-content: center;    
 }
 .company-list {
     background-color: var(--bg-color);
@@ -310,8 +308,12 @@ background-color: var(--button-hover-color);
     padding-bottom: 60px;
 }
 .logo-footer {
-    padding: 0;
-    margin-left: 0;
+    font-family: raleway;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: var(--main-spacing);
+    color: #2196F3;
+    text-decoration: none;
 }
 .footer-span {
     color: var(--bg-color);
@@ -332,8 +334,6 @@ background-color: var(--button-hover-color);
 }
 .footer-data {
 margin-top: 20px;
-}
-.container-footer {
 }
 
 .footer-contacts {
